@@ -53,7 +53,7 @@ var getFirstNameValue = function(){
   alert(document.getElementsByClassName("test")[0].value);
 
 }
-getFirstNameValue(); //uncomment me to test
+// getFirstNameValue(); //uncomment me to test
 
 
 /*
@@ -61,9 +61,12 @@ Write a function which takes a string, `inputName`, and returns the value in the
 has `inputName` as the name attribute
 */
 var getValue = function(inputName){
+  var str;
+  str = document.querySelector("Input[name='lastName']").value;
+  return document.getElementById("out").textContent = str;
 
 }
-// getValue(put an argument here ); //uncomment me to test
+getValue("firstName"); //uncomment me to test
 
 
 /*
